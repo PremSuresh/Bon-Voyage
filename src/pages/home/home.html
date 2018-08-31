@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-navbar color="dark" >
+    <ion-title >
+        <style ></style> 
+        Bon Voyage
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <button ion-button (click)="btnClicked()" block color="primary"><ion-icon name="alarm"></ion-icon> -- Keep me awake --<ion-icon name="alarm"></ion-icon></button>
+  <button ion-button (click)="btnClicked1()" block color="danger"><ion-icon name="nuclear"></ion-icon> - SOS -<ion-icon name="nuclear"></ion-icon></button>
+  
+
+  <!-- <div id="floating-panel">
+    <b>Start: </b>
+    <select [(ngModel)]="start" id="start" (change)="calculateAndDisplayRoute()">
+      <option value="chicago, il">Chicago</option>
+      <option value="st louis, mo">St Louis</option>
+      <option value="joplin, mo">Joplin, MO</option>
+      <option value="oklahoma city, ok">Oklahoma City</option>
+      <option value="amarillo, tx">Amarillo</option>
+      <option value="gallup, nm">Gallup, NM</option>
+      <option value="flagstaff, az">Flagstaff, AZ</option>
+      <option value="winona, az">Winona</option>
+      <option value="kingman, az">Kingman</option>
+      <option value="barstow, ca">Barstow</option>
+      <option value="san bernardino, ca">San Bernardino</option>
+      <option value="los angeles, ca">Los Angeles</option>
+    </select><br>
+    <b>End: </b>
+    <select [(ngModel)]="end" id="end" (change)="calculateAndDisplayRoute()">
+      <option value="chicago, il">Chicago</option>
+      <option value="st louis, mo">St Louis</option>
+      <option value="joplin, mo">Joplin, MO</option>
+      <option value="oklahoma city, ok">Oklahoma City</option>
+      <option value="amarillo, tx">Amarillo</option>
+      <option value="gallup, nm">Gallup, NM</option>
+      <option value="flagstaff, az">Flagstaff, AZ</option>
+      <option value="winona, az">Winona</option>
+      <option value="kingman, az">Kingman</option>
+      <option value="barstow, ca">Barstow</option>
+      <option value="san bernardino, ca">San Bernardino</option>
+      <option value="los angeles, ca">Los Angeles</option>
+    </select>
+    </div> -->
+    <ion-card>
+        <ion-card-content>
+            <div #directionsPanel id="down"></div>
+        </ion-card-content>
+    </ion-card>
+    <div #map id="map"></div>
+</ion-content>

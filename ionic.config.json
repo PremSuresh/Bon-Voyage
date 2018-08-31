@@ -1,0 +1,8 @@
+{
+  "name": "ionic3-googlemaps-directions",
+  "integrations": {
+    "cordova": {}
+  },
+  "v2": true,
+  "typescript": true
+}
