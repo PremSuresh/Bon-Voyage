@@ -19,16 +19,22 @@
     "@angular/platform-browser": "4.0.0",
     "@angular/platform-browser-dynamic": "4.0.0",
     "@ionic-native/core": "^3.14.0",
-    "@ionic-native/native-audio": "^4.12.0",
+    "@ionic-native/file": "^4.12.2",
+    "@ionic-native/media": "^4.12.2",
+    "@ionic-native/media-capture": "^4.12.2",
+    "@ionic-native/native-audio": "^4.12.2",
     "@ionic-native/splash-screen": "3.4.2",
     "@ionic-native/status-bar": "3.4.2",
     "@ionic-native/streaming-media": "^4.12.0",
     "@ionic-native/video-player": "^4.10.1",
-    "@ionic/storage": "2.0.1",
+    "@ionic/storage": "^2.0.1",
     "com.moust.cordova.videoplayer": "https://github.com/moust/cordova-plugin-videoplayer",
+    "cordova-android": "^7.0.0",
     "cordova-browser": "5.0.3",
-    "cordova-plugin-console": "^1.0.5",
     "cordova-plugin-device": "^1.1.4",
+    "cordova-plugin-file": "^6.0.1",
+    "cordova-plugin-media": "^5.0.2",
+    "cordova-plugin-media-capture": "^3.0.2",
     "cordova-plugin-nativeaudio": "^3.0.9",
     "cordova-plugin-splashscreen": "^4.0.3",
     "cordova-plugin-statusbar": "^2.2.1",
@@ -71,14 +77,17 @@
       "com.moust.cordova.videoplayer": {},
       "ionic-plugin-keyboard": {},
       "cordova-plugin-whitelist": {},
-      "cordova-plugin-console": {},
       "cordova-plugin-statusbar": {},
       "cordova-plugin-device": {},
       "cordova-plugin-splashscreen": {},
-      "cordova-plugin-nativeaudio": {}
+      "cordova-plugin-nativeaudio": {},
+      "cordova-plugin-media": {},
+      "cordova-plugin-media-capture": {},
+      "cordova-plugin-file": {}
     },
     "platforms": [
-      "browser"
+      "browser",
+      "android"
     ]
   }
 }

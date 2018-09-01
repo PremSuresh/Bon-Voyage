@@ -5,20 +5,21 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { HttpModule } from '@angular/http';
+import { HomePage } from '../pages/home/home';
 
 import { MyApp } from './app.component';
 import { BonvoyagedataProvider } from '../providers/bonvoyagedata/bonvoyagedata';
-import { NativeAudio } from '@ionic-native/native-audio';
+
 
 @NgModule({
   declarations: [
     MyApp,
-    
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -28,10 +29,9 @@ import { NativeAudio } from '@ionic-native/native-audio';
   providers: [
     StatusBar,
     SplashScreen,
-    
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     BonvoyagedataProvider,
-    NativeAudio
+
   ]
 })
 export class AppModule {}

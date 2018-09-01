@@ -7,6 +7,7 @@ import 'rxjs/add/operator/map';
 import { stringify } from '../../../node_modules/@angular/core/src/util';
 
 declare var google;
+var my;
 
 @IonicPage()
 @Component({
@@ -48,8 +49,13 @@ export class HomePage {
       console.log(data);
     });
     alert("Drowsiness Detection activated");
+    my = setInterval(() => this.bonvoyageService.getRemoteData(), 2500);
+    console.log(my)
   }
-  btnClicked1(){
+  btnClicked1(my){
+    var myVar = my
+    console.log(myVar)
+    clearInterval(myVar);
     let headers = new Headers();
     headers.append('Content-Type','application/json');
     let body = [{
